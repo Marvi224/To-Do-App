@@ -1,6 +1,15 @@
 function toDOList() {
   let addNewTask = document.getElementById("tasks").value;
 
+  // Validate if the user inputs a task, if not an error mesage show up
+  if (addNewTask === "") {
+    document.getElementById("errorMessage").textContent = "Please add a task!";
+    return;
+  }
+
+  // If the task is valide and not empty, the code runs
+  document.getElementById("errorMessage").textContent = "";
+
   // create the list so the user sees the text on the screen
   let newTask = document.createElement("li");
 
