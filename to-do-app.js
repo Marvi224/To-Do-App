@@ -42,6 +42,9 @@ function toDOList() {
 
   // Update the tasks count
   updateCount();
+
+  // Reseting the input area
+  document.getElementById("tasks").value = "";
 }
 
 const userClicks = document
